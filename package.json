@@ -1,0 +1,23 @@
+{
+  "name": "node-course",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000N\u0000O\u0000D\u0000E\u0000\r\u0000 \u0000\r\u0000 \u0000\r\u0000 \u0000#\u0000 \u0000F\u0000i\u0000l\u0000e\u0000 \u0000O\u0000p\u0000e\u0000r\u0000a\u0000t\u0000i\u0000o\u0000n\u0000s\u0000 \u0000i\u0000n\u0000 \u0000N\u0000o\u0000d\u0000e\u0000.\u0000j\u0000s\u0000\r\u0000 \u0000-\u0000 \u0000T\u0000h\u0000e\u0000 \u0000H\u0000T\u0000T\u0000P\u0000 \u0000M\u0000o\u0000d\u0000u\u0000l\u0000e\u0000\r\u0000 \u0000-\u0000 \u0000R\u0000e\u0000a\u0000d\u0000i\u0000n\u0000g\u0000 \u0000D\u0000a\u0000t\u0000a\u0000 \u0000f\u0000r\u0000o\u0000m\u0000 \u0000F\u0000i\u0000l\u0000e\u0000s\u0000\r\u0000 \u0000-\u0000 \u0000W\u0000r\u0000i\u0000t\u0000i\u0000n\u0000g\u0000 \u0000a\u0000n\u0000d\u0000 \u0000U\u0000p\u0000d\u0000a\u0000t\u0000i\u0000n\u0000g\u0000 \u0000F\u0000i\u0000l\u0000e\u0000s\u0000\r\u0000 \u0000-\u0000 \u0000R\u0000e\u0000n\u0000a\u0000m\u0000i\u0000n\u0000g\u0000 \u0000a\u0000n\u0000d\u0000 \u0000R\u0000e\u0000m\u0000o\u0000v\u0000i\u0000n\u0000g\u0000 \u0000F\u0000i\u0000l\u0000e\u0000s\u0000",
+  "homepage": "https://github.com/shyam9493/node#readme",
+  "bugs": {
+    "url": "https://github.com/shyam9493/node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyam9493/node.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}
