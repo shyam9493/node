@@ -5,6 +5,9 @@ const fs=require('file-system')
 
 http.createServer((req,res)=>{
     // res.write(req.url);
+
+
+
     try{
     console.log(req.url);
     let fc=fs.readFileSync(`.${req.url}`,'utf8');
@@ -23,6 +26,19 @@ http.createServer((req,res)=>{
 })
 
 
+
+//file-system
+/*
+fs.readFileSync
+fs.writeFileSync
+fs.rename
+fs.unlink -> delete file
+*/
+
+//http module
+/*
+res.write -> similar to res.send in express
+*/
 
 //Modules Installed
 /*
