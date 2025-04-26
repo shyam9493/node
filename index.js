@@ -5,10 +5,15 @@ const fs=require('file-system')
 
 http.createServer((req,res)=>{
     // res.write(req.url);
+    try{
     console.log(req.url);
-    fs.writeFileSync(`.${req.url}`,"Name","utf8")  
+    let fc=fs.readFileSync(`.${req.url}`,'utf8');
+    fs.writeFileSync(`.${req.url}`,`${fc} \n New content appended`,"utf8")  
     res.write(fs.readFileSync(`.${req.url}`,'utf8')); //prints files requested in url
     res.end()
+    }catch(err){
+        res.write("No such file");
+    }
 }).listen(3000,(err)=>{
     if(err){
         console.log(err);
