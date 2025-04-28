@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get User Location</title>
+</head>
+<body>
+  <h1>Getting your location...</h1>
+
+  <script>
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        const { latitude, longitude } = position.coords;
+
+        fetch('/save-location', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ latitude, longitude })
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Server Response:', data);
+          document.body.innerHTML += `<p>Location Saved: Lat ${latitude}, Lng ${longitude}</p>`;
+        })
+        .catch(err => {
+          console.error('Error:', err);
+        });
+      }, function(error) {
+        console.error('Error Getting Location:', error);
+      });
+    } else {
+      alert('Geolocation is not supported by this browser.');
+    }
+  </script>
+</body>
+</html>
